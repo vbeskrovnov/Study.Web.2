@@ -8,7 +8,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="src/logo.png">
+        <img alt="logo" width="200" src="src/logo.png">
     </div>
     <nav>
         <ul>
@@ -48,21 +48,21 @@
     <div class="table">
         <table width="100%">
             <tr>
-                <th bgcolor="#5ea0d0" rowspan="2">
+                <th rowspan="2">
                     ID
                 </th>
-                <th bgcolor="#5ea0d0" rowspan="2">
+                <th rowspan="2">
                     Name
                 </th>
-                <th bgcolor="#5ea0d0" colspan="2">
+                <th colspan="2">
                     Price
                 </th>
             </tr>
             <tr>
-                <th bgcolor="#5ea0d0">
+                <th>
                     NET
                 </th>
-                <th bgcolor="#5ea0d0">
+                <th>
                     GROSS
                 </th>
             </tr>
@@ -130,16 +130,16 @@
             href="https://ru.wikipedia.org/wiki/Netscape_Communications">Netscape</a> и <a
             href="https://www.microsoft.com/ru-ru/">Microsoft</a>.
 
-        <ul class="list">
-            <li>Chrome</li>
-            <li>FireFox</li>
-            <li>Internet Explorer</li>
-            <ul>
-                <li>IE 8</li>
-                <li>IE 10</li>
-                <li>Edge</li>
+        <ul class="browsers">
+            <li id="chrome">Chrome</li>
+            <li id="firefoxe">Firefox</li>
+            <li id="ie">Internet Explorer</li>
+            <ul class="ie-browsers">
+                <li id="ie8">IE 8</li>
+                <li id="ie10">IE 10</li>
+                <li id="edge">Edge</li>
             </ul>
-            <li>Другие</li>
+            <li id="others">...другие</li>
         </ul>
 
     </div>
@@ -155,6 +155,10 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
+
+    <div class="copyright">
+        Copyright &#9400; All right reserved
+    </div>
 </footer>
 </body>
 </html>

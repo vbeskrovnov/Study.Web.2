@@ -5,7 +5,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 caption, tbody, tfoot, thead, article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
@@ -27,10 +27,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
 }
 
 blockquote, q {
@@ -75,7 +71,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: darkred;
+    color: hotpink;
 }
 
 .logo {
@@ -91,8 +87,15 @@ header nav ul li a:hover {
     padding-right: 10px;
 }
 
+.side nav ul {
+    padding: 0;
+}
+
 .side nav ul li {
     font-family: Arial, serif;
+    border-width: 1px;
+    border-bottom: 1px #93c0df solid;
+    list-style: none;
 }
 
 .side nav ul li:hover {
@@ -113,7 +116,7 @@ header nav ul li a:hover {
 }
 
 .content {
-    width: 700px;
+    width: 770px;
     float: right;
 }
 
@@ -127,9 +130,13 @@ header nav ul li a:hover {
     vertical-align: middle;
 }
 
+.table th {
+    background: #5ea0d0;
+}
+
 .table table, th, td {
     font-family: Arial, serif;
-    font-size: 13px;
+    font-size: 15px;
     border: 1px solid #1a6aa5;
     vertical-align: middle;
     padding: 3px;
@@ -139,19 +146,70 @@ header nav ul li a:hover {
     margin-top: 30px;
 }
 
-.history a{
-    color: darkred;
+.history a {
+    color: hotpink;
     text-decoration: none;
 }
 
-.content .history .list {
+a[href="https://www.microsoft.com/ru-ru/"] {
+    font-weight: bold;
+}
+
+.content .history .browsers {
     margin-top: 30px;
+    font-size: 17px;
+    font-family: Consolas;
+    font-style: italic;
+}
+
+#chrome {
+    color: red;
+}
+
+#firefoxe {
+    color: green;
+}
+
+#ie {
+    color: red;
+}
+
+#ie8 {
+    color: blue;
+    text-decoration: underline;
+}
+
+#ie10 {
+    color: blueviolet;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+#edge {
+    color: yellow;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+#others {
+    color: grey;
+    font-weight: bold;
+}
+
+footer nav {
+    float: left;
 }
 
 footer nav ul li {
     display: inline;
     font-weight: bold;
-    margin: 5px;
+    padding-right: 5px;
+    border-width: 1px;
+    border-right: 1px black solid;
+}
+
+footer nav ul li:last-of-type {
+    border: none;
 }
 
 footer nav ul li a {
@@ -162,11 +220,16 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover {
-    color: darkred;
+    color: hotpink;
 }
 
 footer {
     position: absolute;
     padding-bottom: 30px;
     bottom: 0;
+    width: 1000px;
+}
+
+.copyright {
+    float: right;
 }
